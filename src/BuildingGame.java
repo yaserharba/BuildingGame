@@ -75,7 +75,7 @@ public class BuildingGame extends PApplet {
                 next.width = enx - stx;
                 score += next.width;
                 building.addBlock(next);
-                nextBlock.pickNew(lastx, lasty);
+                nextBlock.pickNew(lastx, lasty, min(next.width+20,100));
             }
         }
     }
@@ -141,7 +141,7 @@ public class BuildingGame extends PApplet {
 
     class NextBlock {
         Block block;
-        final float m = 0.06f;
+        final float m = 0.04f;
         float p;
         int lastFrameCount;
 
@@ -151,8 +151,9 @@ public class BuildingGame extends PApplet {
             this.p = 0;
         }
 
-        void pickNew(int x, int y) {
+        void pickNew(int x, int y, int w) {
             this.block = new Block(x, y);
+            block.width = w;
         }
 
         public void moveNewBlock() {
