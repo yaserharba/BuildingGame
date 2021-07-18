@@ -1,5 +1,3 @@
 # BuildingGame
 Simple Building Game using Java and Processing Library
-```html
-<iframe width="640" height="620" src="https://screencast.autodesk.com/Embed/Timeline/fda65ca3-4dc3-4554-9fd6-42711594c058" frameborder="0" allowfullscreen webkitallowfullscreen></iframe>
-```
+![video](https://d2tsibospanry3.cloudfront.net/dd4fac8c-7ec3-40ba-854c-5bd00ec3ac47/3d8576cf294cb2b3ea73168f6f4a846d.mp4)
