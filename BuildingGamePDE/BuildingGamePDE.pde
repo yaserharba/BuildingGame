@@ -68,7 +68,7 @@ final int screenWidth = 500;
                 next.width = enx - stx;
                 score += next.width;
                 building.addBlock(next);
-                nextBlock.pickNew(lastx, lasty);
+                nextBlock.pickNew(lastx, lasty, min(next.width+20,100));
             }
         }
     }
@@ -134,7 +134,7 @@ final int screenWidth = 500;
 
     class NextBlock {
         Block block;
-        final float m = 0.06f;
+        final float m = 0.04f;
         float p;
         int lastFrameCount;
 
@@ -144,8 +144,9 @@ final int screenWidth = 500;
             this.p = 0;
         }
 
-        void pickNew(int x, int y) {
+        void pickNew(int x, int y, int w) {
             this.block = new Block(x, y);
+            block.width = w;
         }
 
         public void moveNewBlock() {
