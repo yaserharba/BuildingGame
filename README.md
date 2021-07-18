@@ -1,3 +1,7 @@
 # BuildingGame
 Simple Building Game using Java and Processing Library
-[![video]](https://d2tsibospanry3.cloudfront.net/dd4fac8c-7ec3-40ba-854c-5bd00ec3ac47/3d8576cf294cb2b3ea73168f6f4a846d.mp4)
+
+
+https://user-images.githubusercontent.com/49529460/126082300-c4584b86-c78c-4208-8849-21c9f2adf338.mp4
+
+
